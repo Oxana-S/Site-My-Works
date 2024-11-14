@@ -1,0 +1,167 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.splide__slide--has-video:hover .splide__video__play {
+  opacity: 1;
+  cursor: pointer;
+
+}
+
+.splide__video__play:hover {
+  background: rgb(0 0 0 / 50%);
+  border: 1px #fff solid;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.splide__video__play:after {
+
+  border-color: transparent transparent transparent #ffffff;
+
+}
+
+.splide__video__play {
+  background-color: #50a347;
+  width: 4em;
+  height: 4em;
+
+  -webkit-animation-name: 'play_down';
+  -moz-animation-name: 'play_up';
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes  play_top {
+
+	0% 
+	{
+		-webkit-box-shadow: 0 0 #393;
+		box-shadow: 0 0 #393;
+	}
+	to 
+	{
+		-webkit-box-shadow: 0 0 0 20px #33993388;
+		box-shadow: 0 0 0 20px #33993388;
+	}   
+
+}
+
+@keyframes  play_top {
+
+	0% 
+	{
+		-webkit-box-shadow: 0 0 #393;
+		box-shadow: 0 0 #393;
+	}
+	to 
+	{
+		-webkit-box-shadow: 0 0 0 20px #33993388;
+		box-shadow: 0 0 0 20px #33993388;
+	}   
+
+}
+
+@-webkit-keyframes  play_down {
+
+	0% 
+	{
+		-webkit-box-shadow: 0 0 rgb(154, 216, 154);
+		box-shadow: 0 0 rgb(154, 216, 154); 
+	}
+	to 
+	{
+		-webkit-box-shadow: 0 0 0 20px #33993380;
+		box-shadow: 0 0 0 20px #33993380;  
+	}
+
+}
+
+@keyframes  play_down {
+
+	0% 
+	{
+		-webkit-box-shadow: 0 0 rgb(154, 216, 154);
+		box-shadow: 0 0 rgb(154, 216, 154); 
+	}
+	to 
+	{
+		-webkit-box-shadow: 0 0 0 20px #33993380;
+		box-shadow: 0 0 0 20px #33993380;  
+	}
+
+}
+
+
+/* Мои Правки */
+/* Важная Фича для слайдеро-фото, слайдера-видео Splide: 
+1. Добавляем в точках остановок стили к классу ".splide.is-active .splide__slide", чтобы появилась ширина и высота у слайдов на переключаемом слайдере,
+иначе его слайды не будут отображаться (у них нет почему-то ширины и высоты). 
+Так закрываем проблему и с адаптивностью слайдеров 
+Точки остановок смотрим по F12 в первом активном слайде ".splide.is-active .splide__slide"  и подбираем.
+2. Для Видео-слайдов по моему достаточно просто указать стили только один раз для селектора ".splide.is-active .splide__slide".
+параметры подбираем по F12 в первом активном слайде ".splide.is-active .splide__slide". 
+*/
+
+@media (min-width: 320px) {
+    .splide.is-active .splide__slide {
+    width: 320px;
+    height: 160px;
+  }
+}
+
+@media (min-width: 375px) {
+    .splide.is-active .splide__slide {
+    width: 345px;
+    height: 172.5px;
+  }
+}
+
+@media (min-width: 425px) {
+    .splide.is-active .splide__slide {
+    width: 395px;
+    height: 197.5px;
+  }
+}
+
+@media (min-width: 480px) {
+    .splide.is-active .splide__slide {
+    width: 450px;
+    height: 225px;
+  }
+}
+
+@media (min-width: 576px) {
+    .splide.is-active .splide__slide {
+    width: 510px;
+    height: 255px;
+  }
+}
+
+@media (min-width: 768px) {
+.splide.is-active .splide__slide {
+    width: 690px;
+    height: 345px;
+  }
+}
+
+@media (min-width: 992px) {
+  .splide.is-active .splide__slide {
+    width: 930px;
+    height: 465px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .splide.is-active .splide__slide {
+    width: 1170px;
+    height: 585px;
+  }
+}
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sample-form-1</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <style>
+    form#contact {
+      border: 1px solid #e5e5e5;
+      padding: 10px;
+      background: #e9ffd0;
+      border-radius: 5px;
+    }
+
+    #contact label {
+      font-size: 14px;
+    }
+
+    #contact input:required:valid {
+      box-shadow: 0 0 3px #BCEF89;
+      border-color: #BCEF89 !important;
+      background: #fff url(images/valid.png) no-repeat 98% center;
+    }
+
+    #contact textarea:required:valid {
+      box-shadow: 0 0 3px #BCEF89;
+      border-color: #BCEF89 !important;
+    }
+
+    #contact input:focus:invalid {
+      box-shadow: 0 0 3px #FFDF97;
+      border-color: #FFDF97 !important;
+      background: #fff url(images/invalid.png) no-repeat 98% center;
+    }
+
+    #contact textarea:focus:invalid {
+      box-shadow: 0 0 3px #FFDF97;
+      border-color: #FFDF97 !important;
+    }
+
+    .err {
+      border: 1px solid #ff8c00;
+      padding: 10px;
+      background: #FFDF97;
+      text-align: left;
+      border-radius: 3px;
+    }
+
+    .ok {
+      border: 1px #BCEF89 solid;
+      margin-bottom: 15px;
+      padding: 10px;
+      background: #f5f9fd;
+      text-align: center;
+      border-radius: 3px;
+    }
+
+    #author,
+    #email,
+    #url {
+      width: 30%;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #e5e5e5;
+    }
+
+    #comment {
+      width: 100%;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #e5e5e5;
+      box-sizing: border-box;
+    }
+
+    #submit {
+      font-weight: 400;
+      background: #393;
+      font-size: 15px;
+      color: #fff;
+      padding: 10px 50px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <form id="contact" action="mail.php" method="post"> -->
+  <form id="form-1" method="post">
+    <h3>Форма обратной связи</h3>
+    <div id="note"></div>
+    <div id="fields">
+      <p><input type="text" name="name" id="name" placeholder="Имя" required> <label for="author">Как вас
+          зовут</label></p>
+      <p><input type="text" name="address" id="address" placeholder="E-mail" required> <label for="email">Электронная
+          почта</label></p>
+      <p><input type="tel" name="phone" id="phone" placeholder="Тема" required> <label for="url">Тема сообщения</label></p>
+      <p><textarea name="message" cols="1" rows="10" id="comment" placeholder="Введите сюда текст сообщения"
+          required></textarea></p>
+      <p><button type="submit" id="submit" class="go">Отправить сообщение</button></p>
+    </div>
+  </form>
+
+  <div id="home-button" style="display: none; background: red; width: 60px;
+    height: 60px;">
+
+  </div>
+
+  <script>
+    jQuery(document).ready(function ($) {
+      $("#form-1").submit(function () {
+        var str = $(this).serialize();
+        $.ajax({
+          type: "POST",
+          url: "send.php",
+          data: str,
+          success: function (msg) {
+            if (msg == 'OK') {
+              // $('#home-button').show();
+              result = '<div class="ok">Сообщение отправлено</div>';
+              // $("#fields").hide();
+            } else {
+              result = msg;
+            }
+            $('#note').html(result);
+          }
+        });
+        return false;
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Yarkov||registration Form</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel='stylesheet prefetch' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="span12 fs-main-title text-center">yarkov</h1>
+    <h2 class="span12 fs-title text-center" style="color: red">Registration Form</h2>
+  </div>
+  <!-- MultiStep Form -->
+  <div class="row">
+    <div class="container">
+      <form id="msform" action="submit.php" method="post">
+        <!-- progressbar -->
+        <ul id="progressbar">
+          <li class="active">Personal Details</li>
+          <li>Adress Details</li>
+          <li>Radio</li>
+          <li>Comment</li>
+        </ul>
+        <!-- fieldsets -->
+        <!-- <fieldset>
+          <h2 class="fs-title">Personal Details</h2>
+          <h3 class="fs-subtitle">Tell us about you</h3>
+          <input type="text" id="first_name" name="first_name" placeholder="Your First Name" required />
+          <input type="text" id="second_name" name="second_name" placeholder="Your Second Name" required />
+          <input type="text" id="phone" name="phone" placeholder="Phone" required />
+          <button type="button" name="next" class="next action-button">NEXT</button>
+        </fieldset> -->
+        <fieldset id="stage-1">
+          <h2 class="fs-title">Personal Details</h2>
+          <h3 class="fs-subtitle">Tell us about you</h3>
+          <input type="checkbox" id="check-2" class="check" placeholder="check-2" name="check-2" />
+          <input type="checkbox" id="check-1" class="check" placeholder="check-1" name="check-1" />
+          <input type="checkbox" id="check-3" class="check" placeholder="check-3" name="check-3" />
+          <button type="button" name="next" class="next next-stage-1 action-button" disabled="disabled">NEXT</button>
+        </fieldset>
+
+        <fieldset id="stage-2">
+          <h2 class="fs-title">Adress Details</h2>
+          <h3 class="fs-subtitle">Enter Your Address</h3>
+          <input type="text" id="street" placeholder="Street" required="" />
+          <input type="text" id="building" placeholder="Building №" required="" />
+          <input type="text" id="city" placeholder="City" required="" />
+
+          <button type="button" name="previous" class="previous action-button-previous">PREVIOUS</button>
+          <button type="button" name="next" class="next action-button" >NEXT</button>
+        </fieldset>
+        
+        <fieldset id="stage-3">
+          <h2 class="fs-title">Checkbox</h2>
+          <h3 class="fs-subtitle">Enter Your Address</h3>
+          <input type="checkbox" id="check-4" class="check" placeholder="check-1" name="check-1" required  />
+          <input type="checkbox" id="check-5" class="check" placeholder="check-2" name="check-2" required />
+          <input type="checkbox" id="check-6" class="check" placeholder="check-3" name="check-3" required />
+          
+          <button type="button" name="previous" class="previous action-button-previous">PREVIOUS</button>
+          <button type="button" name="next" class="next next-stage-2 action-button" disabled>NEXT</button>
+        </fieldset>
+
+        <fieldset id="stage-4">
+          <h2 class="fs-title">Radio</h2>
+          <h3 class="fs-subtitle">Enter Your Address</h3>
+          <input type="radio" id="radio-1" class="check" placeholder="radio-1" name="radio" required />
+          <input type="radio" id="radio-2" class="check" placeholder="radio-2" name="radio" required />
+          <input type="radio" id="radio-3" class="check" placeholder="radio-3" name="radio" required />
+          
+          <button type="button" name="previous" class="previous action-button-previous">PREVIOUS</button>
+          <button type="button" name="next" class="next next-stage-3 action-button" disabled>NEXT</button>
+        </fieldset>
+
+        <fieldset id="stage-5" >
+          <h2 class="fs-title">Comment</h2>
+          <h3 class="fs-subtitle">Fill in your comment</h3>
+          <textarea id="comment" placeholder="Comments"></textarea>
+          <button type="button" name="previous" class="previous action-button-previous">PREVIOUS</button>
+          <button type="submit" name="submit" class="submit action-button">SUMBIT</button>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <!-- /.MultiStep Form -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js'></script>
+
+ 
+  <script src="js/index-2.js"></script>
+
+</body>
+
+</html>

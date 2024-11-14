@@ -1,0 +1,57 @@
+.contacts {
+    margin: 30px 0;
+    box-sizing: border-box;
+}
+
+.contacts label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    box-sizing: border-box;
+
+}
+
+.contacts input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.error-mess {
+    display: none;
+    color: red;
+    font-weight: 600;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.contacts button {
+    width: 220px;
+    margin: 15px 35px;
+    padding: 15px 10px;
+    background: #e9a723;
+    border-radius: 5px;
+    border: none;
+    font-size: 22px;
+    color: #ffffff;
+    transition: transform ease 500ms;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.contacts textarea {
+    width: 100%;
+    resize: vertical;
+    height: 150px;
+
+}
+.contacts button:hover {
+    transform: scale(1.05);
+}

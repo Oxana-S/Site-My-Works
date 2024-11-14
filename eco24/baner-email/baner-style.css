@@ -1,0 +1,22 @@
+.baner_form {
+  position: relative;
+}
+
+.baner__form-loader-1  {
+    background-image: url('ajax-loader.gif' );
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -54px;
+    left: 115px;
+    height: 88px;
+    width: 88px; 
+    /* background-color: black; */
+   
+}
+.banner__form-msg-sent {
+  color: #f8faf8;
+  padding: 5px;
+  border: 1px solid #fff;
+  margin-top: 10px;
+
+}

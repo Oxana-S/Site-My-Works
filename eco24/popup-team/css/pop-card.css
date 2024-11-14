@@ -1,0 +1,247 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/* Стили для окна Popup */
+.popup__wrap {
+  max-width: 1024px;
+  /* max-height: 470px; */
+  margin: auto;
+}
+
+/* Стили Кнопки "Закрыть" */
+/* Кнопка Close Х  */
+.button-container .button-close {
+  cursor: pointer;
+  position: absolute;
+  height: 60px;
+  padding-left: 30px;
+  padding-right: 90px;
+  background-color: #eeeeee;
+  -webkit-transform: rotate(-90deg) translateX(-100%);
+  -ms-transform: rotate(-90deg) translateX(-100%);
+      transform: rotate(-90deg) translateX(-100%);
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+      transform-origin: left top;
+}
+
+.button-container .button-close .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #393;
+  -webkit-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.button-container .button-close {
+  cursor: pointer;
+  position: absolute;
+  height: 60px;
+  padding-left: 30px;
+  padding-right: 90px;
+  background-color: #eeeeee;
+  -webkit-transform: rotate(-90deg) translateX(-100%);
+  -ms-transform: rotate(-90deg) translateX(-100%);
+      transform: rotate(-90deg) translateX(-100%);
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+      transform-origin: left top;
+}
+
+.button-container .button-close .icon .item {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 24px;
+  height: 2px;
+  background: white;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+}
+
+.button-container .button-close .icon .item:nth-child(1) {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+}
+
+.button-container .button-close {
+  cursor: pointer;
+}
+
+.button-container .button-close .text {
+  font-family: "MetronicProSemiBold", sans-serif;
+  color: #393;
+  font-size: 11px;
+  line-height: 60px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  -webkit-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+/* /.Стили Кнопки "Закрыть" */
+/* Стили Контента */
+.wrap-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1024px;
+  /* max-height: 470px; */
+  margin: 0 auto;
+  /* background: #94f6756b; */
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrap-block .wrap-block__img {
+  max-width: 46%;
+  overflow: hidden;
+  max-height: 470px;
+}
+
+.wrap-block .wrap-block__img img {
+  max-width: 178%;
+  /* max-height: 80% */
+  object-fit: cover;
+}
+
+.wrap-block .wrap-block__text {
+  max-width: 50%;
+  max-height: 388px;
+  padding-right: 15px;
+}
+
+.wrap-block .wrap-block__text .text-descr {
+  max-height: 316px;
+  overflow: auto;
+}
+
+.wrap-block .wrap-block__text .text-descr p {
+  line-height: 18px;
+  letter-spacing: 0.4px;
+}
+.wrap-block .wrap-block__text .text-name {
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 28px;
+  line-height: 34px;
+  color: #424242;
+  padding-top: 22px;
+}
+
+.wrap-block .wrap-block__text .text-position {
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 17px;
+  color: #8e8e8e;
+  max-width: 300px;
+}
+
+.wrap-block .wrap-block__text .text-mail {
+  position: relative;
+  font-size: 14px;
+  color: #424242;
+  padding-left: 19px;
+}
+
+.wrap-block .wrap-block__text .text-mail:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 9px;
+  height: 9px;
+  background-color: #393;
+}
+
+.wrap-block .wrap-block__text .text-name,
+.wrap-block .wrap-block__text .text-position {
+  padding-bottom: 10px;
+}
+
+.wrap-block .wrap-block__text .text-mail {
+  padding-bottom: 0px;
+}
+
+
+
+/* Стили Контента Окна Popup*/
+@media only screen and (max-width: 992px) {
+  .wrap-block .wrap-block__img {
+    max-width: 100%;
+  }
+  .wrap-block .wrap-block__img img {
+    width: 100%;
+  }
+  .wrap-block .wrap-block__text {
+    max-width: 100%;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    max-height: 434px;
+  }
+  .wrap-block .wrap-block__text .text__header .hr-horizontal-gradient {
+    margin: 10px 0;
+    padding: 0;
+    height: 0;
+    border: none;
+    border-top: 1px solid #333;
+  }
+}
+/* Конец. Стили для окна Popup */
+
+/* Стили для карточки в Слайдере, по клику на который открывается Popup */
+
+
+.popup__container .view {
+  padding-bottom: 20px;
+  background-color:#3399331a;
+}
+
+.popup__container .image-team {
+  max-height: 250px;
+  overflow: hidden;
+}
+
+.popup__container .header-team {
+  padding-top: 20px;
+  padding-left: 12px;
+  font-family: "Gotham Pro";
+}
+.popup__container .header-team .position-team {
+  margin-bottom: 6px;
+} 
+.popup__container .label-team {
+  position: relative;
+}
+.popup__container .label-team:after {
+  content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background-color: #393;
+    left: 86px;
+    top: 7px;
+}
+.popup__container .view:hover .label-team:after {
+    background-color: #e2a348;
+}
+.teams-slider .swiper-wrapper {
+  margin-bottom: 40px;
+}
+/* Конец. Стили для карточки в Слайдере, по клику на который открывается Popup */

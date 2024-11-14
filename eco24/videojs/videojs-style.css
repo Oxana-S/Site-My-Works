@@ -1,0 +1,112 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+   .hero__video_mainVideo
+     {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+
+    #my-video {
+    width:100%;
+    height:auto;
+    }
+    
+    .video-js .vjs-tech {
+    position: relative;
+    }
+    
+    .video-js .vjs-big-play-button {
+    top: 40%;
+    left: 40%;
+    font-size: 3em;
+    color:#ffffff;
+    line-height: 2.5em;
+    height: 2.5em;
+    width: 2.5em;
+    cursor: pointer;
+    opacity: 1;
+    background-color: #2B333F;
+    border: 0.06666em solid #276d2700;
+    background-color: #2f8b2f9f;
+
+    -webkit-animation-name: 'play_down';
+    -moz-animation-name: 'play_up';
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-box-shadow: 0 0 0px 3px #40dd3b00;
+            box-shadow: 0 0 0px 3px #40dd3b00;
+    
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+@-webkit-keyframes  play_top {
+
+	0% 
+	{
+		-webkit-box-shadow: 0 0 #393;
+		box-shadow: 0 0 #393;
+	}
+	to 
+	{
+		-webkit-box-shadow: 0 0 0 20px #33993388;
+		box-shadow: 0 0 0 20px #33993388;
+	}   
+
+}
+
+@keyframes  play_top {
+
+	0% 
+	{
+		-webkit-box-shadow: 0 0 #393;
+		box-shadow: 0 0 #393;
+	}
+	to 
+	{
+		-webkit-box-shadow: 0 0 0 20px #33993388;
+		box-shadow: 0 0 0 20px #33993388;
+	}   
+
+}
+
+@-webkit-keyframes  play_down {
+
+	0% 
+	{
+		-webkit-box-shadow: 0 0 rgb(154, 216, 154);
+		box-shadow: 0 0 rgb(154, 216, 154); 
+	}
+	to 
+	{
+		-webkit-box-shadow: 0 0 0 20px #33993380;
+		box-shadow: 0 0 0 20px #33993380;  
+	}
+
+}
+
+@keyframes  play_down {
+
+	0% 
+	{
+		-webkit-box-shadow: 0 0 rgb(154, 216, 154);
+		box-shadow: 0 0 rgb(154, 216, 154); 
+	}
+	to 
+	{
+		-webkit-box-shadow: 0 0 0 20px #33993380;
+		box-shadow: 0 0 0 20px #33993380;  
+	}
+
+}

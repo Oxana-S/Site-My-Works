@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <meta name="keywords"
+    content="Захоронение, кладбище, могила, найти, посмотреть, благоустройство, заказать, памятник, венок">
+  <meta name="description" content="Поиск, просмотр, благоустройство захоронений.">
+  <title>Тихие - Аллеи|Поиск, Просмотр, Благоустройство Захоронений.</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <style>
+    #myTime {
+      position: relative;
+      z-index: 2;
+      max-width: 200px;
+      height: fit-content;
+      padding: 15px;
+      margin: auto;
+      border: 1px solid #000;
+      background-color: #dfd9d9;
+    }
+  </style>
+</head>
+
+<body class=""><!-- <div class="wrapper__scroll breakpoints"> -->
+  <div class="wrapper__scroll site__body">
+    <header class="">
+      <section id="home" class="header" style="background-image:url(img/background-1.png)" data-aos="fade-in"
+        data-aos-duration="400"><!-- Menu -->
+        <div class="header-top header-top-main" data-aos="fade-down" data-aos-easing="ease-in-sine"
+          data-aos-duration="600">
+          <div class="container">
+            <div class="row header-top__wrap">
+              <div class="header-top__logo col-6 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2"
+                style="position: relative;"><!-- <img src="img/logo.svg" alt=""/> -->
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_tzt6tuau.json"
+                  background="transparent" speed="1" style="width: 200px;" loop autoplay></lottie-player><a href="#"
+                  style="display: inline-block; position: absolute; top:0; left: 0; width: 100%; height: 100%; z-index: 40;"></a>
+              </div>
+              <div class="header-top__menu col-lg-8 col-xl-8 col-xxl-8">
+                <nav><a href="#home" class="active">Главная</a> <a href="#services" class="">Услуги</a> <a href="#about"
+                    class="">О&nbsp;нас</a> <a href="#alleys" class="">Аллеи</a> <a href="#reviews" class="">Отзывы</a>
+                  <a href="#gallery" class="">Фотогалерея</a> <a href="#contacts" class="">Контакты</a>
+                </nav>
+              </div><!-- Popup. Popup-call №1 - добавил класс wrapper__scroll для блокировки скрола -->
+              <div class="header-top__info col-sm-8 col-md-8 col-lg-2 col-xl-2 col-xxl-2">
+                <p class="header-top__info-phone"><a href="tel:+79913908042"><img src="img/icon/phone-white.svg" alt="">
+                    <span>+7(991)-390-80-42</span></a></p>
+                <p class="header-top__info-link"><a href="#popup_call" class="popup-link">заказать звонок</a></p>
+              </div>
+              <div class="burger-menu col-6 col-sm-1 col-md-1"><!-- Кнопка-Бургер -->
+                <div class="header__burger"><span></span></div><!-- End. Кнопка-Бургер --><!-- Menu-Бургер -->
+                <nav class="burger-menu__nav"><a href="#home" class="burger-menu__link scrollto">Главная</a> <a
+                    href="#services" class="burger-menu__link scrollto">Услуги</a> <a href="#about"
+                    class="burger-menu__link scrollto">О&nbsp;нас</a> <a href="#alleys"
+                    class="burger-menu__link scrollto">Аллеи</a> <a href="#reviews"
+                    class="burger-menu__link scrollto">Отзывы</a> <a href="#gallery"
+                    class="burger-menu__link scrollto">Фотогалерея</a> <a href="#contacts"
+                    class="burger-menu__link scrollto">Контакты</a>
+                  <div class="burger-menu__info">
+                    <p class="burger-menu__info-phone"><a href="tel:+79913908042"><img src="img/icon/phone-white.svg"
+                          alt=""> <span>+7(991)-390-80-42</span></a></p>
+                    <p class="burger-menu__info-link"><a href="#popup_call" class="popup-link">заказать звонок</a></p>
+                  </div>
+                </nav>
+              </div><!-- End. Menu-Бургер -->
+            </div>
+          </div>
+        </div><!-- \. Menu -->
+        <div class="header-info" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+          data-aos-duration="900">
+          <div class="container">
+            <h3>Тихие аллеи. Помним. Чтим.</h3>
+            <h2>Поиск и благоустройство мест захоронений.<br>Установка памятников.</h2>
+          </div>
+        </div>
+        <div class="container">
+          <div class="header-read">
+            <p class="button__one mb-0 mt-0 me-md-5" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="50"><a
+                href="#feedback">Заказать</a></p>
+            <p class="button__two mb-0 mt-0" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="50"><a
+                href="#consultation">Бесплатная<br>консультация</a></p>
+          </div>
+        </div>
+      </section>
+      <div class="header-overlay" style="background-image:url(img/rectangle-2.png)"></div>
+      <!-- Sticky Menu,Появляется при Прокрутке. -->
+      <div class="header-top-sticky lock-padding">
+        <div class="container">
+          <div class="row header-top__wrap">
+            <div class="header-top__logo col-6 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2"
+              style="position: relative;"><!-- <img src="img/logo.svg" alt=""/> -->
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+              <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_tzt6tuau.json" background="transparent"
+                speed="1" style="width: 180px;" loop autoplay></lottie-player><a href="#"
+                style="display: inline-block; position: absolute; top:0; left: 0; width: 100%; height: 100%; z-index: 40;"></a>
+            </div>
+            <div class="header-top__menu col-lg-8 col-xl-8 col-xxl-8">
+              <nav><a href="#home" class="active">Главная</a> <a href="#services" class="">Услуги</a> <a href="#about"
+                  class="">О&nbsp;нас</a> <a href="#alleys" class="">Аллеи</a> <a href="#reviews" class="">Отзывы</a> <a
+                  href="#gallery" class="">Фотогалерея</a> <a href="#contacts" class="">Контакты</a></nav>
+            </div>
+            <div class="header-top__info col-sm-8 col-md-8 col-lg-2 col-xl-2 col-xxl-2">
+              <p class="header-top__info-phone"><a href="tel:+79913908042"><img src="img/icon/phone-white.svg" alt="">
+                  <span>+7(991)-390-80-42</span></a></p>
+              <p class="header-top__info-link"><a href="#popup_call" class="popup-link">заказать звонок</a></p>
+            </div>
+            <div class="burger-menu col-6 col-sm-1 col-md-1"><!-- Кнопка-Бургер -->
+              <div class="header__burger"><span></span></div><!-- End. Кнопка-Бургер --><!-- Menu-Бургер -->
+              <nav class="burger-menu__nav"><a href="#home" class="burger-menu__link scrollto">Главная</a> <a
+                  href="#services" class="burger-menu__link scrollto">Услуги</a> <a href="#about"
+                  class="burger-menu__link scrollto">О&nbsp;нас</a> <a href="#alleys"
+                  class="burger-menu__link scrollto">Аллеи</a> <a href="#reviews"
+                  class="burger-menu__link scrollto">Отзывы</a> <a href="#gallery"
+                  class="burger-menu__link scrollto">Фотогалерея</a> <a href="#contacts"
+                  class="burger-menu__link scrollto">Контакты</a>
+                <div class="burger-menu__info">
+                  <p class="burger-menu__info-phone"><a href="tel:+79913908042"><img src="img/icon/phone-white.svg"
+                        alt=""> <span>+7(991)-390-80-42</span></a></p>
+                  <p class="burger-menu__info-link"><a href="#popup_call" class="popup-link">заказать звонок</a></p>
+                </div>
+              </nav>
+            </div><!-- End. Menu-Бургер -->
+          </div>
+        </div>
+      </div><!-- /. Sticky Menu,Появляется при Прокрутке. -->
+    </header>
+    <main class="">
+      <section class="services" id="services">
+        <div class="container">
+          <div class="main-title__wrap" data-aos="fade-up" data-aos-duration="700">
+            <div class="main-title">
+              <h2>Наши услуги</h2>
+              <div class="border-left border--dark"></div>
+            </div>
+          </div>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-duration="700">
+          <div class="services__flex">
+            <div class="services__row">
+              <div class="services__col">
+                <div class="services__card card">
+                  <div class="card__image"><img src="img/services/services-1.png" alt=""></div>
+                  <div class="card__body">
+                    <div class="card__title">Поиск захоронения</div>
+                    <div class="card__text">Мы производим поиск места захоронения по указанным вами данным. Заполняйте
+                      форму и мы постараемся найти!</div>
+                    <div class="card__bottom" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="50">
+                      <div class="card__button button"><a href="#feedback">заказать</a></div>
+                      <div class="card__cost">990 руб.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="services__col">
+                <div class="services__card card">
+                  <div class="card__image"><img src="img/services/services-2.png" alt=""></div>
+                  <div class="card__body">
+                    <div class="card__title">Благоустройство места</div>
+                    <div class="card__text">Проводим работы по благоустройству мест захоронений. Обновлённый и
+                      аккуратный вид места - дань памяти нашим близким.</div>
+                    <div class="card__bottom" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="50">
+                      <div class="card__button button"><a href="#feedback">заказать</a></div>
+                      <div class="card__cost">от 250 руб.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="services__col">
+                <div class="services__card card">
+                  <div class="card__image"><img src="img/services/services-3.png" alt=""></div>
+                  <div class="card__body">
+                    <div class="card__title">Уборка места</div>
+                    <div class="card__text">Оказываем услуги уборки на месте захоронения. Быстро и качественно наведём
+                      порядок.</div>
+                    <div class="card__bottom" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="50">
+                      <div class="card__button button"><a href="#feedback">заказать</a></div>
+                      <div class="card__cost">от 299 руб./м.кв..</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="services__col">
+                <div class="services__card card">
+                  <div class="card__image"><img src="img/services/services-4.png" alt=""></div>
+                  <div class="card__body">
+                    <div class="card__title">Установка памятника</div>
+                    <div class="card__text">Устанавливаем качественные, красивые, долговечные памятники из различных
+                      материалов, на широкий бюджетный диапазон.</div>
+                    <div class="card__bottom" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="50">
+                      <div class="card__button button"><a href="#feedback">заказать</a></div>
+                      <div class="card__cost">от 1999 руб.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--advantages-->
+      <section class="advantages">
+        <div class="container">
+          <div class="main-title__wrap main-title__wrap--right" data-aos="fade-up" data-aos-duration="700">
+            <div class="main-title">
+              <h2>Преимущества</h2>
+              <div class="border-right border--dark"></div>
+            </div>
+          </div>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-duration="700">
+          <div class="row advantages-items">
+            <div class="col-md-6 col-lg-4 col-xl-3">
+              <div class="advantages-item"><img src="img/icon/gallery-icon.svg" alt="">
+                <div class="advantages-item__title">
+                  <h5>Фото отчеты</h5>
+                </div>
+                <div class="advantages-item__text">
+                  <p>по проделанным работам</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+              <div class="advantages-item"><img src="img/icon/icon-pointer.svg" alt="">
+                <div class="advantages-item__title">
+                  <h5>Геолокация захоронений</h5>
+                </div>
+                <div class="advantages-item__text">
+                  <p>по территории России</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+              <div class="advantages-item"><img src="img/icon/consult-icon.svg" alt="">
+                <div class="advantages-item__title">
+                  <h5>Бесплатная консультация</h5>
+                </div>
+                <div class="advantages-item__text">
+                  <p>по всем услугам</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+              <div class="advantages-item"><img src="img/icon/calendar-icon.svg" alt="">
+                <div class="advantages-item__title">
+                  <h5>Точно в срок</h5>
+                </div>
+                <div class="advantages-item__text">
+                  <p>выполняем все работы</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--about-->
+      <section class="about" id="about" style="background-image:url(img/background-2.jpg)" data-aos="fade-in"
+        data-aos-duration="800">
+        <div class="container">
+          <div class="main-title__wrap" data-aos="fade-up" data-aos-duration="700">
+            <div class="main-title">
+              <h2 class="main-title--white">О нас</h2>
+              <div class="border-left border--white"></div>
+            </div>
+          </div>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-duration="700">
+          <div class="about-info">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="about-info__item">
+                  <h3>Что мы делаем?</h3>
+                  <p>Сервис «Тихие аллеи» предоставляет услуги поиска, просмотра и благоустройства мест захоронений в
+                    любом регионе России и СНГ с использованием сети Интернет. Торговый знак (знак обслуживания) «Тихие
+                    аллеи. Помним. Чтим.» зарегистрирован Федеральной службой по интеллектуальной собственности за №
+                    700325 от 25.02.2019г. Сервис работает благодаря нашим Партнерам, которые добросовестно выполняют
+                    работы «на земле». Внимательную обработку Ваших заказов, расчеты и тщательный контроль результатов
+                    работы Партнеров осуществляет Оператор Сервиса компания «Цитрин Восток».</p><a href="#popup-about"
+                    class="popup-link">Подробнее о нас</a><!-- <a href="">Подробнее о нас</a>-->
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="about-info__item">
+                  <h3>Наша команда</h3>
+                  <div class="about-info__team"><!-- <img class="img-circle" src="img/foto.png" alt=""> --> <img
+                      class="img-circle" src="img/about/АлександрСлавский-2.jpg" alt="">
+                    <div class="about-info__team_info">
+                      <h5>Александр Славский</h5>
+                      <p>Директор компании</p><a href="mailto:ivanov.a.a.@mail.com"><img src="img/icon/mail-icon.svg"
+                          alt=""> avs@stillalleys.com</a>
+                    </div>
+                  </div>
+                  <div class="about-info__team"><img class="img-circle" src="img/about/АндрейГрязнов-2.jpg" alt="">
+                    <div class="about-info__team_info">
+                      <h5>Андрей Грязнов</h5>
+                      <p>Специалист по работе с клиентами</p><a href="mailto:ivanov.a.a.@mail.com"><img
+                          src="img/icon/mail-icon.svg" alt=""> ta@stillalleys.com</a>
+                    </div>
+                  </div>
+                  <div class="about-info__team"><img class="img-circle" src="img/about/ДенисРуселик-2.jpg" alt="">
+                    <div class="about-info__team_info">
+                      <h5>Денис Руселик</h5>
+                      <p>Специалист по работе с партнерами</p><a href="mailto:ivanov.a.a.@mail.com"><img
+                          src="img/icon/mail-icon.svg" alt=""> partners@stillalleys.com</a>
+                    </div>
+                  </div><!-- <a href="" class="text-center">Подробнее о команде</a> -->
+                </div>
+              </div>
+              <div class="col-lg-4"><img class="mt-5" src="img/about/about-team-2.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </section><!--alleys-->
+      <section class="alleys" id="alleys" style="background-image:url(img/map.png)" data-aos="fade-in"
+        data-aos-duration="800">
+        <div class="alleys-overlay" style="background-image:url(img/overlay-map.png)" data-aos="fade-in"
+          data-aos-duration="800"></div>
+        <div class="container">
+          <div class="main-title__wrap main-title__wrap--right" data-aos="fade-up" data-aos-duration="700">
+            <div class="main-title">
+              <h2 class="main-title--dark">Аллеи</h2>
+              <div class="border-right border--dark"></div>
+            </div>
+          </div>
+        </div><!-- <div id="myTime"></div> -->
+        <div class="alleys-links" data-aos="fade-in" data-aos-duration="500">
+          <div class="alleys-item moscow">
+            <div class="point"></div>
+            <p>Москва</p>
+          </div>
+          <div class="alleys-item tver">
+            <div class="point pulse"></div>
+            <p>Тверь</p>
+          </div>
+          <div class="alleys-item chelyabinsk">
+            <div class="point"></div>
+            <p>Челябинск</p>
+          </div>
+          <div class="alleys-item vladivostok">
+            <p>Владивосток</p>
+            <div class="point pulse"></div>
+          </div>
+          <div class="alleys-item magadan">
+            <p>Магадан</p>
+            <div class="point pulse"></div>
+          </div>
+        </div><!-- Оверлей под карточки с Аллеями. -->
+        <div class="card__overlay overlay__card--hide"></div>
+        <div class="container alleys-item__wrap"><!-- Оверлей под карточками находиться вверху --><!-- Тверь -->
+          <div class="alleys-item__card item__card--tver item__card--hide draggable"><a href="#header"
+              class="card__close--tver"><img src="img/icon/icon-close.svg" alt=""> </a><img
+              src="img/slider/Тверь.Дмитрово-Черкасы-1.jpg" alt="">
+            <div class="alleys-item__body">
+              <h3>Тверь</h3>
+              <h4>Адрес: <span>Дмитрово-Черкассы</span></h4>
+              <h4>Кол-во мест: <span>236</span></h4>
+            </div>
+          </div><!-- Магадан Магадан.14_км -->
+          <div class="alleys-item__card item__card--magadan item__card--hide draggable"><a href="#header"
+              class="card__close--magadan"><img src="img/icon/icon-close.svg" alt=""> </a><img
+              src="img/slider/Магадан.14_км-1.jpg" alt="">
+            <div class="alleys-item__body">
+              <h3>Магадан</h3>
+              <h4>Адрес: <span>Кладбище, 14 км</span></h4>
+              <h4>Кол-во мест: <span>4</span></h4>
+            </div>
+          </div><!-- Магадан Магадан.Марчеканское -->
+          <div class="alleys-item__card item__card--magadan item__card--hide draggable"><a href="#header"
+              class="card__close--magadan"><img src="img/icon/icon-close.svg" alt=""> </a><img
+              src="img/slider/Магадан.Марчеканское-1.jpg" alt="">
+            <div class="alleys-item__body">
+              <h3>Магадан</h3>
+              <h4>Адрес: <span>Марчеканское кладбище</span></h4>
+              <h4>Кол-во мест: <span>4</span></h4>
+            </div>
+          </div><!-- Магадан Магадан.Потаповское -->
+          <div class="alleys-item__card item__card--magadan item__card--hide draggable"><a href="#header"
+              class="card__close--magadan"><img src="img/icon/icon-close.svg" alt=""> </a><img
+              src="img/slider/Магадан.Потаповское-1.jpg" alt="">
+            <div class="alleys-item__body">
+              <h3>Магадан</h3>
+              <h4>Адрес: <span>Потаповское кладбище</span></h4>
+              <h4>Кол-во мест: <span>2</span></h4>
+            </div>
+          </div><!-- Владивосток Морское -->
+          <div class="alleys-item__card item__card--vladivostok item__card--hide draggable"><a href="#header"
+              class="card__close--vladivostok"><img src="img/icon/icon-close.svg" alt=""> </a><img
+              src="img/slider/Владивосток.Морское-1.jpg" alt="">
+            <div class="alleys-item__body">
+              <h3>Владивосток</h3>
+              <h4>Адрес: <span>Морское кладбище</span></h4>
+              <h4>Кол-во мест: <span>1</span></h4>
+            </div>
+          </div>
+        </div>
+      </section><!--QuestIon-->
+      <section class="quest" style="background-image:url(img/background-quest.png)" data-aos="fade-in"
+        data-aos-duration="800">
+        <div class="container">
+          <div class="quest-info">
+            <h3 class="mb-5" data-aos="fade-up" data-aos-duration="700">Возможно вам понадобиться наша
+              деликатная<br>помощь в будущем?</h3>
+            <h4 class="mb-5" data-aos="fade-up" data-aos-duration="700">Просьба, отметьте пожалуйста, какие<br>это могут
+              быть услуги и отправьте нам:</h4>
+            <form class="g-form-2" id="g-form-2" method="POST" action="" autocomplete="on" data-aos="fade-up"
+              data-aos-duration="700">
+              <h2 class="g-form__title g-form__title_respond"></h2>
+              <div class="g-form__preloader"></div>
+              <div class="g-form__blocks">
+                <div class="row quest-form">
+                  <div class="col-lg-6">
+                    <div class="g-form__check g-form__block--left">
+                      <fieldset class="g-form__check-wrapper form-check"><input type="checkbox" class="form-check-input"
+                          name="Поиск Захоронений" id="search"> <label for="search">Поиск Захоронений</label></fieldset>
+                      <fieldset class="g-form__check-wrapper form-check"><input type="checkbox" class="form-check-input"
+                          name="Благоустройство" id="good-place"> <label for="good-place">Благоустройство места</label>
+                      </fieldset>
+                      <fieldset class="g-form__check-wrapper form-check"><input type="checkbox" class="form-check-input"
+                          name="Уборка" id="clean-place"> <label for="clean-place">Уборка места</label></fieldset>
+                      <fieldset class="g-form__check-wrapper form-check"><input type="checkbox" class="form-check-input"
+                          name="Памятники" id="monument"> <label for="monument">Установка памятников</label></fieldset>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="g-form__inputs g-form__block--right">
+                      <fieldset class="g-form__input-wrapper"><input class="g-form__input form-control" id="rewiev-name"
+                          name="Имя" placeholder="Введите ваше имя" required></fieldset>
+                      <fieldset class="g-form__input-wrapper"><input
+                          class="g-form__input g-form__input_email form-control" id="rewiev-email" name="Email"
+                          type="email" placeholder="Введите ваш email"></fieldset>
+                      <fieldset class="g-form__input-wrapper"><input
+                          class="g-form__input g-form__input_tel form-control" id="rewiev-tel" name="Телефон" type="tel"
+                          placeholder="Введите ваш телефон" required></fieldset>
+                      <fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden"><input
+                          class="g-form__input form-control utm" id="utm-quest" name="UTM" placeholder="UTM метка">
+                      </fieldset>
+                      <fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden"><label
+                          for="quest-honeypot">Помогает бороться со спамом. Должно быть пустым!</label> <input
+                          id="quest-honeypot" type="text" name="honeypot" value=""></fieldset>
+                      <div class="g-form__button-wrapper button__one" data-aos="zoom-in" data-aos-duration="800"
+                        data-aos-delay="50"><button class="g-form__button">Отправить</button></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section><!--consultation-->
+      <section id="consultation" class="consultation">
+        <div class="container" data-aos="fade-up" data-aos-duration="700">
+          <h2 class="mb-4">Бесплатная консультация</h2>
+          <p class="mb-4">В любое удобное для вас время вы можете заказать консультацию по всем вопросам связанными с
+            нашими услугами. Наши сотрудники расскажут вам обо всех особенностях и нюансах. Это абсолютно бесплатно.</p>
+          <p class="button__one" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="50">
+            <!-- <a href="#popup-3" class="popup-link">Заказать бесплатную консультацию</a> --> <a href="#popup-3"
+              class="popup-link">Заказать бесплатную консультацию</a>
+          </p>
+        </div>
+      </section><!--gallery-->
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <div class="main-title__wrap" data-aos="fade-up" data-aos-duration="700">
+            <div class="main-title">
+              <h2>Фотогалерея</h2>
+              <div class="border-left border--dark"></div>
+            </div>
+          </div>
+        </div>
+        <div class="container p-0" data-aos="fade-up" data-aos-duration="700">
+          <!-- Основной слайдер без названий и описания слайдов -->
+          <div id="primary-slider" class="galery-sliders splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide"><img src="img/slider/slider-1.png"></li>
+                <li class="splide__slide"><img src="img/slider/Владивосток.Морское-1.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/tver-5.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/tver-6.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/Магадан.Марчеканское-1.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/tver-7.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/tver-8.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/Магадан.Потаповское-1.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/tver-1.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/tver-2.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/Магадан.14_км-1.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/tver-3.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/tver-4.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/Тверь.Дмитрово-Черкасы-1.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/tver-9.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/tver-10.jpg"></li>
+              </ul>
+            </div>
+          </div><!-- End. Основной слайдер без названий и описания слайдов --><!--Слайдер с превью изображениями -->
+          <div id="secondary-slider" class="galery-sliders splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide"><img src="img/slider/slider-1.png"></li>
+                <li class="splide__slide"><img src="img/slider/Владивосток.Морское-1.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/tver-5.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/tver-6.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/Магадан.Марчеканское-1.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/tver-7.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/tver-8.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/Магадан.Потаповское-1.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/tver-1.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/tver-2.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/Магадан.14_км-1.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/tver-3.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/tver-4.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/Тверь.Дмитрово-Черкасы-1.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/tver-9.jpg"></li>
+                <li class="splide__slide"><img src="img/slider/tver-10.jpg"></li>
+              </ul>
+            </div>
+          </div><!--End. Слайдер с превью изображениями -->
+        </div>
+      </section><!--rewiews-->
+      <section class="reviews" id="reviews" style="background-image:url(img/reviews-background-1.jpg)"
+        data-aos="fade-in" data-aos-duration="800">
+        <div class="container">
+          <div class="main-title__wrap main-title__wrap--right" data-aos="fade-up" data-aos-duration="700">
+            <div class="main-title">
+              <h2>Отзывы</h2>
+              <div class="border-right border--dark"></div>
+            </div>
+          </div>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-duration="700">
+          <div class="reviews-slider">
+            <div class="splide__reviews splide">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="reviews-carousel-item reviews-carousel-item--img"><img
+                        class="reviews-carousel-item--img" src="img/reviews/1.jpg" alt="">
+                      <div class="reviews-carousel-item__info">
+                        <h4>Светлана г.Тверь</h4>
+                        <p>Установка оградки, лавочки, столика. Впервые заказывали установку оградки, лавочки, столика и
+                          тем более по интернету. С помощью менеджера мы выбрали лучшие модели. Очень понравилось
+                          общение, всё объясняют подробно и понятно. Работу сделали чётко в обещанные сроки. Спасибо
+                          большое данному сервису.</p>
+                      </div>
+                      <div class="reviews-carousel-item__over"><img src="img/icon/cov.svg" alt=""> <img
+                          src="img/icon/cov.svg" alt=""></div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="reviews-carousel-item"><img class="reviews-carousel-item--img" src="img/reviews/2-1.jpg"
+                        alt="">
+                      <div class="reviews-carousel-item__info">
+                        <h4>Елена г. Магадан</h4>
+                        <p>Установка памятника, ремонт лавочки. Выбрали очень хороший памятник – у нас в городе таких не
+                          делают! Качество памятника и установка на высоте. Да ещё и лавочку отремонтировали.
+                          Единственное – сроки доставки памятника в Магадан около месяца, зато памятник очень достойный.
+                          Будем ещё один памятник заказывать у вас!</p>
+                      </div>
+                      <div class="reviews-carousel-item__over"><img src="img/icon/cov.svg" alt=""> <img
+                          src="img/icon/cov.svg" alt=""></div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="reviews-carousel-item"><img class="reviews-carousel-item--img" src="img/reviews/3-1.jpg"
+                        alt="">
+                      <div class="reviews-carousel-item__info">
+                        <h4>Тамара г. Воронеж</h4>
+                        <p>Спасибо, что помогли навести порядок на могилке в Магадане. Поправили помятую оградку,
+                          сделали отсыпку. Теперь там полный порядок. Сотрудники аллей проконтролировали все работы и
+                          отчитались фотографиями по ватсапу.<br>Очень удобно!</p>
+                      </div>
+                      <div class="reviews-carousel-item__over"><img src="img/icon/cov.svg" alt=""> <img
+                          src="img/icon/cov.svg" alt=""></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--feedback-->
+      <section id="feedback" class="feedback background-anime"
+        style="background-image:url(img/background-feedback-1.jpg)" data-aos="fade-in" data-aos-duration="800">
+        <div class="container" data-aos="fade-up" data-aos-duration="700">
+          <div class="feedback-form">
+            <div class="feedback-form__title">
+              <h4>Заказать услуги</h4>
+            </div>
+            <form id="main-form" action="" method="GET" class="g-form-4 main-form" autocomplete="off" data-aos="fade-up"
+              data-aos-duration="700">
+              <h3 class="g-form__title">заполните форму, чтобы получить 10% скидку на все наши услуги</h3>
+              <h2 class="g-form__title g-form__title_respond"></h2>
+              <div class="g-form__preloader"></div><!-- Основные поля --> <input type="text" name="Имя" id="main-name"
+                placeholder="Ваше Имя" autocomplete="on" required> <input type="email" name="Email" id="main-email"
+                placeholder="Ваше email" autocomplete="on" required> <input type="tel" name="Телефон" id="main-tel"
+                placeholder="Ваш телефон" class="g-form__input_tel" autocomplete="on" required>
+              <fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden"><input name="UTM" id="utm-main"
+                  class="g-form__input utm" placeholder="UTM метка"></fieldset>
+              <fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden"><label for="main-honeypot">Помогает
+                  бороться со спамом. Должно быть пустым!</label> <input id="main-honeypot" type="text" name="honeypot"
+                  value=""></fieldset>
+              <div class="button__one" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="50"><button
+                  type="submit" id="main-order-button" class="g-form__button">Заказать</button></div>
+              <fieldset class="g-form__checkbox-wrapper"><input type="checkbox" name="Политика Конфиденциальности"
+                  id="main-politic" required> <label for="main-politic" class="main-politic__label"><a
+                    href="#popup-politic" class="popup-link">Ознакомьтесь с «Политикой конфиденциальности»</a></label>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </section><!--contacts-->
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <div class="main-title__wrap" data-aos="fade-up" data-aos-duration="700">
+            <div class="main-title">
+              <h2>Контакты</h2>
+              <div class="border-left border--dark"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6" data-aos="fade-up" data-aos-duration="700">
+                <div class="contact-info"><img src="img/icon/icon-pointer.svg" alt="">
+                  <div class="contact-info__info">
+                    <h5>Адрес:</h5>
+                    <p>г. Магадан, ул. Якутская, 70</p>
+                  </div>
+                </div>
+                <div class="contact-info"><img src="img/icon/icon-convert.svg" alt="">
+                  <div class="contact-info__info">
+                    <h5>E-mail:</h5>
+                    <p><a href="mailto:lidogen@stillalleys.com">lidogen@stillalleys.com</a></p>
+                  </div>
+                </div>
+                <div class="contact-info"><img src="img/icon/icon-phone.svg" alt="">
+                  <div class="contact-info__info">
+                    <h5>Телефон:</h5>
+                    <p><a href="tel:+79913908042">+7 (991) 390-80-42</a> (WhatsApp)</p>
+                  </div>
+                </div>
+                <div class="contact-info"><img class="contact-info__img--last" src="img/icon/icon-time.svg" alt="">
+                  <div class="contact-info__info">
+                    <h5>Режим работы:</h5>
+                    <p>09:00 - 18:00 (+8 к Московскому)<br>В нерабочее время оставляйте голосовое<br>сообщение. Мы
+                      обязательно перезвоним!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 mt-5" data-aos="fade-up" data-aos-duration="700">
+                <div class="contact-map"><!-- <img src="img/map-contant.png" class="img-fluid" alt=""> -->
+                  <script type="text/javascript" charset="utf-8" async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A65fc03679ec01e97ca712cffd118724f3149fcf14d116b93c49a72253e4283b4&amp;width=100%&amp;height=459&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row footer__wraper">
+          <div class="col-sm-3 col-lg-3 lottie--overlay">
+            <!-- <img class="footer__logo" src="img/logo-footer.svg" alt=""/> -->
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_eag4zzen.json" background="transparent"
+              speed="1" style="height: 150px;" loop
+              autoplay><!-- background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay> --></lottie-player>
+            <div class="footer-copyright">©️ 2020 Тихие Аллеи<br>Web студия: OKShleyfman</div>
+          </div>
+          <div class="col-6 col-sm-5 col-lg-4">
+            <div class="footer-title"><img src="img/icon/footer-clock.png" alt="">
+              <h4>Местное время:</h4>
+            </div>
+            <div class="footer-time">
+              <div class="row">
+                <div class="col-md-5">
+                  <p class="phoneheader__item"><span class="phoneheader__city">Москва</span> <span
+                      class="phoneheader__time" id="moscow"></span></p>
+                  <p class="phoneheader__item"><span class="phoneheader__city">Тверь</span> <span
+                      class="phoneheader__time" id="tver"></span></p>
+                </div>
+                <div class="col-md-7 text-right">
+                  <p class="phoneheader__item"><span class="phoneheader__city">Челябинск</span> <span
+                      class="phoneheader__time" id="chelyabinsk"></span></p>
+                  <p class="phoneheader__item"><span class="phoneheader__city">Магадан</span> <span
+                      class="phoneheader__time" id="magadan"></span></p>
+                  <p class="phoneheader__item"><span class="phoneheader__city">Владивосток</span> <span
+                      class="phoneheader__time" id="vladivostok"></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 footer-menu__wrap">
+            <div class="footer-menu">
+              <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Услуги</a></li>
+                <li><a href="">Преимущества</a></li>
+                <li><a href="">О нас</a></li>
+                <li><a href="">Аллеи</a></li>
+                <li><a href="">Отзывы</a></li>
+                <li><a href="">Фотогалерея</a></li>
+                <li><a href="">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-3">
+            <div class="footer-contact"><img src="img/icon/footer-phone.svg" alt="">
+              <p><a href="+79913908042">+7(991)-390-80-42</a></p>
+            </div>
+            <div class="footer-button text-right"><a href="#popup_call" class="popup-link">заказать звонок</a></div>
+            <div class="footer-contact footer-contact--marker"><img src="img/icon/footer-marker.png" alt="">
+              <p class="text-right">г. Магадан,<br>ул. Якутская, 70</p>
+            </div>
+          </div>
+        </div><!-- Скрытый блок для <576 -->
+        <div class="col-12 lottie--overlay lottie--overlay--hide">
+          <!-- <img class="footer__logo" src="img/logo-footer.svg" alt=""/> -->
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_eag4zzen.json" background="transparent"
+            speed="1" style="width: 150px!important; height: 150px;" loop autoplay></lottie-player>
+          <div class="footer-copyright">©️ 2020 Тихие Аллеи<br>Web студия: OKShleyfman</div>
+        </div>
+      </div>
+    </footer><!-- <div id="myTime"></div> --><!-- <div class="wrapper__scroll">
+	    <a href="#popup_call" class="header__phone popup-link">Заказать звонок</a>
+	</div> --><!-- Модальное окно "Обратный Звонок"-->
+    <div id="popup_call" class="popup g-form">
+      <div class="popup__body">
+        <div class="popup__content"><a href="#header" class="popup__close close-popup"><img
+              src="img/icon/icon-close.svg" alt=""></a>
+          <h2 class="popup__title g-form__title_main">Заказать звонок</h2>
+          <form action="" method="GET" id="g-form-call" class="g-form-call call__back">
+            <h2 class="g-form__title g-form__title_respond"></h2>
+            <div class="g-form__preloader"></div><input type="text" name="Имя" id="call-name" placeholder="Ваше Имя"
+              required> <input type="tel" name="Телефон" id="call-email" placeholder="Ваш телефон"
+              class="g-form__input_tel" required>
+            <fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden"><input name="UTM" id="utm-call"
+                class="g-form__input utm" placeholder="UTM метка"></fieldset>
+            <fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden"><label for="honeypot">Помогает бороться
+                со спамом. Должно быть пустым!</label> <input id="call-honeypot" type="text" name="honeypot" value="">
+            </fieldset><button type="submit" id="call-button" class="g-form__button">Заказать звонок</button>
+          </form>
+        </div>
+      </div>
+    </div><!-- End. Модальное окно --><!-- Модальное окно "Заказать Консультацию" -->
+    <div id="popup-3" class="g-form popup popup-consultation">
+      <div class="popup__body">
+        <div class="popup__content"><a href="#header" class="popup__close close-popup"><img
+              src="img/icon/icon-close.svg" alt=""></a>
+          <h2 class="popup__title g-form__title_main">Бесплатная консультация</h2>
+          <form action="" method="GET" id="consultation-form"
+            class="g-form-3 call__back call__back-top form-consultation">
+            <h3 class="g-form__title">заполните форму, чтобы получить 10% скидку на все наши услуги</h3>
+            <!-- Заполняется пр успешной отпрвке формы -->
+            <h2 class="g-form__title g-form__title_respond"></h2>
+            <div class="g-form__preloader"></div><input type="text" name="Имя" id="consult-name" placeholder="Ваше Имя"
+              required> <input type="email" name="Email" id="consult-email" placeholder="Ваше email" required> <input
+              type="tel" name="Телефон" id="consalt-tel" placeholder="Ваш телефон" class="g-form__input_tel" required>
+            <fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden"><input name="UTM" id="utm-consult"
+                class="g-form__input utm" placeholder="UTM метка"></fieldset>
+            <fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden"><label for="honeypot">Помогает бороться
+                со спамом. Должно быть пустым!</label> <input id="honeypot" type="text" name="honeypot" value="">
+            </fieldset><button type="submit" id="call-button" class="g-form__button">Заказать</button>
+            <fieldset class="g-form__checkbox-wrapper"><input type="checkbox" name="Политика Конфиденциальности"
+                id="politic"> <label for="politic">Ознакомьтесь с «Политикой конфиденциальности»</label></fieldset>
+          </form>
+        </div>
+      </div>
+    </div><!-- End. Модальное окно --><!-- Модальное окно "Политика Конфиденциальности" -->
+    <div id="popup-politic" class="popup">
+      <div class="popup__body">
+        <div class="popup__content"><a href="#header" class="popup__close close-popup"><img
+              src="img/icon/icon-close.svg" alt=""></a>
+          <h2 class="popup__title">«Политика конфиденциальности»</h2>
+          <p>Настоящим в соответствии с Федеральным законом № 152-ФЗ «О персональных данных» от 27.07.2006 года Вы
+            подтверждаете свое согласие на обработку компанией ООО "Цитрин Восток" (далее - Компания) персональных
+            данных: сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование,
+            передачу исключительно в целях продажи программного обеспечения на Ваше имя, как это описано ниже,
+            блокирование, обезличивание, уничтожение. Компания гарантирует конфиденциальность получаемой информации.
+            Обработка персональных данных осуществляется в целях эффективного исполнения заказов, договоров и иных
+            обязательств, принятых Компанией в качестве обязательных к исполнению.</p>
+          <p>В случае необходимости предоставления Ваших персональных данных правообладателю, дистрибьютору или
+            реселлеру программного обеспечения в целях регистрации программного обеспечения на ваше имя, вы даёте
+            согласие на передачу ваших персональных данных. Компания гарантирует, что правообладатель, дистрибьютор или
+            реселлер программного обеспечения осуществляет защиту персональных данных на условиях, аналогичных
+            изложенным в Политике конфиденциальности персональных данных.</p>
+          <p>Настоящее согласие распространяется на следующие Ваши персональные данные: фамилия, имя и отчество, адрес
+            электронной почты, почтовый адрес доставки заказов, контактный телефон, платёжные реквизиты.</p>
+          <p>Срок действия согласия является неограниченным. Вы можете в любой момент отозвать настоящее согласие,
+            направив письменное уведомления на адрес: 685000, г. Магадан, ул. Якутская, д. 70, офис 401 с пометкой
+            «Отзыв согласия на обработку персональных данных».</p>
+          <p>Обращаем ваше внимание, что отзыв согласия на обработку персональных данных влечёт за собой удаление Вашей
+            учётной записи с Интернет-сайта (https://тихиеАллеи.рф), а также уничтожение записей, содержащих ваши
+            персональные данные, в системах обработки персональных данных Компании , что может сделать невозможным
+            пользование интернет-сервисами Компании.</p>
+          <p>Гарантирую, что представленная мной информация является полной, точной и достоверной, а также что при
+            представлении информации не нарушаются действующее законодательство Российской Федерации, законные права и
+            интересы третьих лиц. Вся представленная информация заполнена мною в отношении себя лично.</p>
+          <p>Настоящее согласие действует в течение всего периода хранения персональных данных, если иное не
+            предусмотрено законодательством Российской Федерации.</p>
+        </div>
+      </div>
+    </div><!-- End. Модальное окно --><!-- Модальное окно "Подробнее о Компании"-->
+    <div id="popup-about" class="popup">
+      <div class="popup__body">
+        <div class="popup__content"><a href="#header" class="popup__close close-popup"><img
+              src="img/icon/icon-close.svg" alt=""></a>
+          <h2 class="popup__title">Подробнее о компании:</h2><img src="img/about/АлександрСлавский.jpg"
+            alt="Александр Славский" width="50%">
+          <p>Оператор сервиса <span>«Тихие аллеи» - ООО «Цитрин Восток»</span> имеет несколько направлений деятельности.
+          </p>
+          <p>С <span>2009</span> г. мы стабильно удерживаем одну из ведущих позиций в регионе в сфере подключения и
+            сопровождения организаций всех форм собственности к сервисам электронной отчетности и электронного
+            документооборота.</p>
+          <p>За более чем <span>10 летний срок </span>работы нам удалось создать дружный коллектив, выстроить внутренние
+            бизнес-процессы, ввести в работу современные технологии работы с клиентами.</p>
+          <p><span>В 2019 г.</span> мы обратили внимание на проблему благоустройства мест захоронений людей родственники
+            которых уехали из нашего региона. Скрупулезно изучив ситуацию на рынке мы пришли к выводу, что по-настоящему
+            удобного онлайн-сервис поиска, просмотра и благоустройства захоронений не существует.</p>
+          <p><span>К началу 2020 г</span>. мы разработали концепцию сервиса основанную на самых успешных практиках
+            массовых продаж услуг населению с их продвижением через Интернет и социальные сети, которую успешно
+            применяем.</p>
+          <p>Руководитель проекта "Тихие Аллеи"<br>Александр Славский</p>
+        </div>
+      </div>
+    </div><!-- End. Модальное окно -->
+  </div>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

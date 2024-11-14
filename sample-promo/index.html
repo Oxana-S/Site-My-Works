@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Промо-Акции Магнет-Интернет</title>
+
+  <meta name="description" content="Подключите интернет в Магадане бесплатано только сейчас!" />
+  <meta name="keywords" content="Интернет, бесплатно, подключить, магадан" />
+
+  <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico" />
+
+  <!-- Optional Styles -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Countdown  -->
+  <link rel="stylesheet" href="http://works.tk/cdn/countdown/css/styles.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #main-wrapper {
+      max-width: 1920px;
+      margin: auto;
+    }
+    
+    a:focus {
+   outline: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- БЛОК. ПРЕЛОАДЕР САЙТА-->
+  <style>
+    .preloader {
+      /*фиксированное позиционирование*/
+      position: fixed;
+      /* координаты положения */
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      /* фоновый цвет элемента */
+      background: #e0e0e0;
+      /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+      z-index: 10001;
+    }
+
+    .preloader__row {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      width: 70px;
+      height: 70px;
+      margin-top: -35px;
+      margin-left: -35px;
+      text-align: center;
+      animation: preloader-rotate 2s infinite linear;
+    }
+
+    .preloader__item {
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      background-color: #337ab7;
+      border-radius: 100%;
+      width: 35px;
+      height: 35px;
+      animation: preloader-bounce 2s infinite ease-in-out;
+    }
+
+    .preloader__item:last-child {
+      top: auto;
+      bottom: 0;
+      animation-delay: -1s;
+    }
+
+    @keyframes preloader-rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes preloader-bounce {
+
+      0%,
+      100% {
+        transform: scale(0);
+      }
+
+      50% {
+        transform: scale(1);
+      }
+    }
+
+    .loaded_hiding .preloader {
+      transition: 0.3s opacity;
+      opacity: 0;
+    }
+
+    .loaded .preloader {
+      display: none;
+    }
+  </style>
+  <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+    </div>
+  </div>
+  <!-- Прелоадер Скрипт -->
+  <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 200);
+    }
+  </script>
+
+  <!-- БЛОК. ВИДЕО-ФОН-БЛОКА -->
+  <style>
+    .intro {
+      /*height: 750px;*/
+      height: 100vh;
+      display: flex;
+      /* background: url(http://works.tk/cdn/imgs/caver-img.jpg) no-repeat; */
+
+    }
+
+    .intro::before {
+      content: "";
+      display: block;
+      width: 100%;
+      /*height: 750px;*/
+      height: 100vh;
+
+      background-color: rgba(0, 0, 0, .4);
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+
+    .video {
+      /*height: 750px;*/
+      height: 100vh;
+      max-width: 100%;
+      /* overflow: hidden; */
+      margin: auto;
+      overflow: hidden;
+    }
+
+    .video__media {
+      /*max-width: 1920px;*/
+      width: 100vw;
+      /*height: 750px;*/
+    }
+  </style>
+  <div class="intro">
+    <div class="video">
+      <video class="video__media" src="http://works.tk/cdn/videos/video-2.mp4" autoplay muted loop>
+
+      </video>
+    </div>
+
+    <!-- poster="http://works.tk/cdn/imgs/caver-img.jp -->
+  </div>
+
+  <!-- БЛОК. ПРОМО-СТРАНИЦА -->
+  <style>
+    #promo-body {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+      color: #fff;
+      /* margin-top: 15px; */
+      height: 100vh;
+    }
+
+    .col {
+      display: flex;
+      justify-content: center;
+    }
+
+    .geo-point__icon {
+      font-size: 24px;
+    }
+
+    .geo-point__text {
+      font-size: 12px;
+    }
+
+    /* анимация heartbeat  */
+
+    @keyframes heartBeat {
+      from {
+        transform: scale(.9);
+      }
+
+      100% {
+        transform: scale(1.1);
+      }
+
+      /* to {
+        transform: scale(1.1);
+      } */
+    }
+
+    @media (max-width: 575.98px) {
+      #head-cap {
+        margin-bottom: 80px;
+      }
+
+      .logo-row .logo-top,
+      .geo-point {
+        margin-bottom: 10px;
+      }
+
+      #head-cap .logo-top {
+        text-align: center;
+      }
+
+      #head-title h2 {
+        font-size: 32px;
+      }
+
+      #block-button {
+        height: 64px !important;
+        margin-bottom: 18px !important;
+      }
+
+      #block-button a {
+        font-size: 18px !important;
+        line-height: 50px !important;
+        height: 64px !important;
+      }
+    }
+
+    @media (min-width: 576px) {
+      #head-cap {
+        margin-bottom: 40px !important;
+      }
+
+      #head-title h2 {
+        font-size: 42px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      #head-cap {
+        margin-bottom: 72px !important;
+      }
+    }
+
+    @media (min-width: 992px) {
+      #head-cap {
+        margin-bottom: 86px !important;
+      }
+
+      #head-title h2 {
+        font-size: 50px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      #head-cap {
+        margin-bottom: 130px !important;
+      }
+    }
+  </style>
+  <!-- Тело Промо-Страницы -->
+  <div id="promo-body" class="block-wrapper">
+    <section id="promo-body__section" class=""
+      data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}">
+
+      <div class="container pt-3">
+        <!-- Шапка -->
+        <div id="head-cap" class="row">
+          <!-- Лого -->
+          <div class="col-sm-12 col-md-4 text-sm-center">
+            <div class="logo-row">
+              <div class="text-uppercase">
+                <div class="logo-top landing-block-node-date-title g-mb-5">
+                  <img
+                    src="https://cdn-ru.bitrix24.ru/b14416424/landing/ba1/ba189ad35bd52a69135b8dddfb6b25a4/logo-red_2x.png"
+                    alt="" width="120">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Город-Географическая точка -->
+          <div class="col-sm-12 col-md-4 text-sm-center">
+            <div class="geo-point d-flex flex-column">
+              <div class="geo-point__icon d-sm-flex align-self-center ">
+                <i class="fa fa-map-marker "></i>
+              </div>
+
+              <div class="text-uppercase">
+                <!-- Где -->
+                <h3 class="geo-point__text text-center text-uppercase mb-0">
+                  Магадан</h3>
+              </div>
+            </div>
+          </div>
+          <!-- Кнопка-Телефон  -->
+          <style>
+            #button-top>a {
+              width: 221px;
+              text-align: center;
+              /* background-color: #; */
+              height: 40px;
+              border-color: #f15b1c;
+              border-width: 2px;
+              border-style: solid;
+              border-radius: 100px;
+              opacity: 0.65;
+              text-decoration: none;
+              cursor: pointer;
+              color: #fff;
+              font-size: 20px;
+              box-sizing: border-box;
+              line-height: 24px;
+              padding-right: 24.3px;
+              padding-left: 24.3px;
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: normal;
+            }
+
+            #button-top>a:hover {
+              background-color: #f15b1c;
+            }
+
+            #button-top>a:hover .button__text {
+              border-bottom-style: none;
+              border-bottom-width: 0px;
+            }
+          </style>
+          <div class="col-sm-12 col-md-4 text-center text-sm-center text-md-right" id="button-top">
+            <a class=" btn " href="tel:89955283030" target="_self">8-995-528-3030</a>
+          </div>
+        </div>
+        <!-- Главный Заголовок -->
+        <div id="head-title" class="row mb-3">
+          <div class="col">
+            <h2 class=" text-center text-uppercase font-weight-bold 
+              " style="letter-spacing: 0px;">Магнет интернет в Магадане
+            </h2>
+          </div>
+        </div>
+        <!-- Стрелка вниз  -->
+        <style>
+          #block-arrow {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 25px;
+            background-position: 0% 0%;
+            background-repeat: no-repeat;
+            border-width: 1px;
+            top: 320px;
+            height: 45px;
+            /* width: 100px; */
+
+            animation-name: arrowDown;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+          }
+
+
+          #block-arrow>img {
+            vertical-align: top;
+          }
+
+          @keyframes arrowDown {
+            from {
+              transform: translateY(-40px);
+            }
+
+            25% {
+              transform: translateY(0);
+
+
+            }
+
+            100% {
+              visibility: hidden;
+              opacity: 0;
+
+            }
+          }
+        </style>
+        <div class="row">
+          <div class="col">
+            <div id="block-arrow" class="js-animation fadeInDown" style="animation-duration: 2000;">
+              <img src="http://works.tk/cdn/imgs/arrow-100x100.png" alt="arrow" width="100" height="45">
+            </div>
+          </div>
+
+        </div>
+        <!-- Кнопка -->
+        <style id="block-style-button">
+          #block-button {
+            width: 480px;
+            text-align: center;
+            background-color: #f15b1c;
+            z-index: 664;
+            height: 80px;
+            border-color: #045169;
+            border-width: 0px;
+            border-style: solid;
+            border-radius: 100px;
+            webkit-box-shadow: inset 0 2px 0 rgba(255, 255, 255, .25), 0 1px 0 0 #b59d21;
+            -moz-box-shadow: inset 0 2px 0 rgba(255, 255, 255, .25), 0 1px 0 0 #b59d21;
+            box-shadow: inset 0 2px 0 rgba(255, 255, 255, .25), 0 1px 0 0 #b59d21;
+            box-shadow: 6px 7px 15px rgba(0, 0, 0, 0.3)
+          }
+
+          #block-button a {
+            display: block;
+            text-decoration: none;
+            cursor: pointer;
+            max-width: 480px;
+            color: #fff;
+            font-size: 22px;
+            box-sizing: border-box;
+            line-height: 64px;
+            height: 80px;
+            padding-right: 24.3px;
+            padding-left: 24.3px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+          }
+
+          #block-button {
+            animation-name: heartBeat;
+            animation: heartBeat 0.5s alternate;
+            animation-iteration-count: 6;
+          }
+
+          #block-button:hover {
+            background-color: #fd7100;
+            animation-name: heartBeat;
+            animation: heartBeat 0.5s alternate;
+            animation-iteration-count: infinite;
+          }
+        </style>
+        <div class="row">
+          <div class="col">
+            <div class="" id="block-button">
+              <a href="#myModal-1" role="button" class="btn" data-toggle="modal" target=""
+                data-label="Получить спецпредложение">
+                <span>Получить спецпредложение</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Promo Timer  -->
+    <style>
+      @media (max-width: 575.98px) {
+        .u-content-space {
+          padding-top: 2.25rem;
+          padding-bottom: 2.25rem;
+        }
+      }
+
+      @media (min-width: 576px) {
+        .u-content-space {
+          padding-top: 2.8rem;
+          padding-bottom: 2.25rem;
+        }
+      }
+    </style>
+    <section class="u-content-space u-overlay__inner text-white text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+
+            <div class="js-timer u-timer"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Promo Content -->
+  </div>
+
+
+  <!-- БЛОК. POPUPs -->
+  <style>
+    .modal-content {
+      border-radius: 15px;
+      background-color: rgba(255, 255, 255, 0);
+      /* height: 100%; */
+    }
+
+    .form-wrap-1,
+    .form-wrap-2 {
+      border-radius: 15px;
+    }
+
+    .form-wrap-2 {
+      background-color: #f15b1c;
+      /* color: #fff; */
+    }
+
+    .form-wrap-1 {
+      background-color: #fff;
+      /* color: #f15b1c; */
+    }
+
+    /* стили для кнопки .close*/
+    #myModal-2 .close span {
+      color: #fff;
+    }
+
+    #myModal-1 .close span {
+      color: #000;
+    }
+  </style>
+  <!-- Modal 1 Bootstrap -->
+  <div id="myModal-1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="form-wrap-1">
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button> -->
+          <a href="#myModal-2" role="button" class="btn close" data-dismiss="modal" data-toggle="modal"
+            aria-label="Close" style="color: black;"><span aria-hidden="true">&times;</span></a>
+          <!-- Форма -1 -->
+          <script id="bx24_form_inline" data-skip-moving="true">
+            (function (w, d, u, b) {
+              w['Bitrix24FormObject'] = b;
+              w[b] = w[b] || function () {
+                arguments[0].ref = u;
+                (w[b].forms = w[b].forms || []).push(arguments[0])
+              };
+              if (w[b]['forms']) return;
+              var s = d.createElement('script');
+              s.async = 1;
+              s.src = u + '?' + (1 * new Date());
+              var h = d.getElementsByTagName('script')[0];
+              h.parentNode.insertBefore(s, h);
+            })(window, document, 'https://b24-7xhr8l.bitrix24.ru/bitrix/js/crm/form_loader.js', 'b24form');
+
+            b24form({
+              "id": "14",
+              "lang": "ru",
+              "sec": "22cjkd",
+              "type": "inline"
+            });
+          </script>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal 2 Bootstrap -->
+  <div id="myModal-2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+
+      <div class="modal-content">
+        <div class="form-wrap-2">
+          <button type="button" class="close " data-dismiss="modal" aria-label="Close"
+            style="width: 40px; height: 37px; margin-left: 460px;">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <!-- Форма-1 -->
+          <div id="my_container-2"></div>
+          <script id="bx24_form_inline" data-skip-moving="true">
+            (function (w, d, u, b) {
+              w['Bitrix24FormObject'] = b;
+              w[b] = w[b] || function () {
+                arguments[0].ref = u;
+                (w[b].forms = w[b].forms || []).push(arguments[0])
+              };
+              if (w[b]['forms']) return;
+              var s = d.createElement('script');
+              s.async = 1;
+              s.src = u + '?' + (1 * new Date());
+              var h = d.getElementsByTagName('script')[0];
+              h.parentNode.insertBefore(s, h);
+            })(window, document, 'https://b24-7xhr8l.bitrix24.ru/bitrix/js/crm/form_loader.js', 'b24form');
+
+            b24form({
+              "id": "16",
+              "lang": "ru",
+              "sec": "6e7yyo",
+              "type": "inline",
+              "node": document.getElementById('my_container-2')
+            });
+          </script>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal 3 Bootstrap -->
+  <div id="myModal-30" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="form-wrap-1">
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button> -->
+          <a href="#myModal-2" role="button" class="btn close" data-dismiss="modal" data-toggle="modal"
+            aria-label="Close" style="color: black;"><span aria-hidden="true">&times;</span></a>
+          <!-- Форма -1 -->
+          <div id="my_container-3"></div>
+          <script id="bx24_form_inline" data-skip-moving="true">
+            (function (w, d, u, b) {
+              w['Bitrix24FormObject'] = b;
+              w[b] = w[b] || function () {
+                arguments[0].ref = u;
+                (w[b].forms = w[b].forms || []).push(arguments[0])
+              };
+              if (w[b]['forms']) return;
+              var s = d.createElement('script');
+              s.async = 1;
+              s.src = u + '?' + (1 * new Date());
+              var h = d.getElementsByTagName('script')[0];
+              h.parentNode.insertBefore(s, h);
+            })(window, document, 'https://b24-7xhr8l.bitrix24.ru/bitrix/js/crm/form_loader.js', 'b24form');
+
+            b24form({
+              "id": "18",
+              "lang": "ru",
+              "sec": "g9bg5f",
+              "type": "inline",
+              "node": document.getElementById('my_container-3')
+            });
+          </script>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+
+  <!--Countdown -->
+  <!-- <script src="assets/vendors/jquery.migrate.min.js"></script> -->
+  <script src="http://works.tk/cdn/countdown/jquery.countdown/jquery.countdown.js"></script>
+  <script src="http://works.tk/cdn/countdown/vendors/jquery.countdown.js"></script>
+
+  <!-- Скрипт, вызывающий модальное окно "Modal 3 Bootstrap" после загрузки страницы 
+       через 30 секунд-->
+  <script>
+    $(document).ready(function () {
+      setInterval(function () {
+        // открыть модальное окно 
+        $("#myModal-3").modal('show');
+      }, 30000);
+    });
+  </script>
+</body>
+
+</html>

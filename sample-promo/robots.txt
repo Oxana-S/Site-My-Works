@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /#sours/
+Disallow: /img/
+Disallow: /video/
+Disallow: _страница-захвата.txt
